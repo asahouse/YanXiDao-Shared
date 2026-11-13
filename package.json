@@ -1,0 +1,25 @@
+{
+  "name": "@yanxidao/shared",
+  "version": "1.0.0",
+  "description": "Shared domain rules, types, and pure utilities for YanXiDao client and admin platform",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "typescript": "~6.0.2"
+  }
+}
